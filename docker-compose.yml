@@ -3,8 +3,9 @@ version: '3.8'
 services:
 
   wordpress:
-    build:
-      context: ./wordpress
+    # build:
+    #   context: ./wordpress
+    image: spidicey/word-press-docker:latest
     container_name: wordpress
     restart: always
     ports:
